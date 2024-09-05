@@ -1,0 +1,36 @@
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+/* 
+Notice that in Sass, the ul, li, and a selectors are nested inside the nav selector.
+
+While in CSS, the rules are defined one by one (not nested):
+
+CSS Syntax:
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+*//*# sourceMappingURL=style.css.map */
