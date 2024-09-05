@@ -1,0 +1,48 @@
+// System Requirements for Sass
+// Operating system - Sass is platform independent
+// Browser support - Sass works in Edge/IE (from IE 8), Firefox, Chrome, Safari, Opera
+// Programming language - Sass is based on Ruby
+
+/* 
+
+Sass Variables
+
+Variables are a way to store information that you can re-use later.
+
+With Sass, you can store information in variables, like:
+
+    strings
+    numbers
+    colors
+    booleans
+    lists
+    nulls
+
+
+Sass uses the $ symbol, followed by a name, to declare variables:
+
+ ----------------
+
+Sass Variable Syntax:
+
+ ----------------
+
+$variablename: value;
+
+*/
+
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+body {
+    font-family: $myFont;
+    font-size: $myFontSize;
+    color: $myColor;
+    text-align: center;
+}
+
+#container {
+    width: $myWidth;
+}       

@@ -1,0 +1,39 @@
+/* 
+
+Sass Variables
+
+Variables are a way to store information that you can re-use later.
+
+With Sass, you can store information in variables, like:
+
+    strings
+    numbers
+    colors
+    booleans
+    lists
+    nulls
+
+
+Sass uses the $ symbol, followed by a name, to declare variables:
+
+ ----------------
+
+Sass Variable Syntax:
+
+ ----------------
+
+$variablename: value;
+
+*/
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: red;
+  text-align: center;
+  background: silver;
+}
+
+#container {
+  width: 680px;
+  border: 1px blue double;
+}/*# sourceMappingURL=style.css.map */
