@@ -1,0 +1,76 @@
+body {
+  text-align: center;
+  background: silver;
+}
+
+.danger {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  background-color: green;
+}
+
+/* 
+
+Using a Mixin
+    The @include directive is used to include a mixin.
+
+    Sass @include mixin Syntax:
+
+selector {
+  @include mixin-name;
+}
+    So, to include the important-text mixin created above:
+
+    SCSS Syntax:
+
+.danger {
+  @include important-text;
+  background-color: green;
+}
+*/
+/* Define mixin with two arguments */
+.myArticle {
+  border: 1px solid blue;
+}
+
+.myNotes {
+  border: 2px solid red;
+}
+
+/* 
+Default Values for a Mixin
+It is also possible to define default values for mixin variables:
+
+SCSS Syntax:
+
+@mixin bordered($color: blue, $width: 1px) {
+  border: $width solid $color;
+}
+
+Then, you only need to specify the values that change when you include the mixin:
+
+SCSS Syntax:
+
+.myTips {
+  @include bordered($color: orange);
+}
+
+Using a Mixin For Vendor Prefixes
+Another good use of a mixin is for vendor prefixes.
+
+Here is an example for transform:
+
+SCSS Syntax:
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+.myBox {
+  @include transform(rotate(20deg));
+}
+*//*# sourceMappingURL=style.css.map */
