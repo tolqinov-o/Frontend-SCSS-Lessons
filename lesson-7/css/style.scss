@@ -1,0 +1,146 @@
+/* Sass String Functions
+The string functions are used to manipulate and get information about strings.
+
+Sass strings are 1-based. The first character in a string is at index 1, not 0.
+
+The following table lists all string functions in Sass:
+
+Function	Description & Example
+quote(string)	Adds quotes to string, and returns the result.
+
+Example:
+quote(Hello world!)
+Result: "Hello world!"
+str-index(string, substring)	Returns the index of the first occurrence of the substring within string.
+
+Example:
+str-index("Hello world!", "H")
+Result: 1
+str-insert(string, insert, index)	Returns string with insert inserted at the specified index position.
+
+Example:
+str-insert("Hello world!", " wonderful", 6)
+Result: "Hello wonderful world!"
+str-length(string)	Returns the length of string (in characters).
+
+Example:
+str-length("Hello world!")
+Result: 12
+str-slice(string, start, end)	Extracts characters from string; start at start and end at end, and returns the slice.
+
+Example:
+str-slice("Hello world!", 2, 5)
+Result: "ello"
+to-lower-case(string)	Returns a copy of string converted to lower case.
+
+Example:
+to-lower-case("Hello World!")
+Result: "hello world!"
+to-upper-case(string)	Returns a copy of string converted to upper case.
+
+Example:
+to-upper-case("Hello World!")
+Result: "HELLO WORLD!"
+unique-id()	Returns a unique randomly generated unquoted string (guaranteed to be unique within the current sass session).
+
+Example:
+unique-id()
+Result: tyghefnsv
+unquote(string)	Removes quotes around string (if any), and returns the result.
+
+Example:
+unquote("Hello world!")
+Result: Hello world! */
+
+
+/* Sass Numeric Functions
+The numeric functions are used to manipulate numeric values.
+
+The following table lists all numeric functions in Sass:
+
+Function	Description & Example
+abs(number)	Returns the absolute value of number.
+
+Example:
+abs(15)
+Result: 15
+abs(-15)
+Result: 15
+ceil(number)	Rounds number up to the nearest integer.
+
+Example:
+ceil(15.20)
+Result: 16
+comparable(num1, num2)	Returns whether num1 and num2 are comparable.
+
+Example:
+comparable(15px, 10px)
+Result: true
+comparable(20mm, 1cm)
+Result: true
+comparable(35px, 2em)
+Result: false
+floor(number)	Rounds number down to the nearest integer.
+
+Example:
+floor(15.80)
+Result: 15
+max(number...)	Returns the highest value of several numbers.
+
+Example:
+max(5, 7, 9, 0, -3, -7)
+Result: 9
+min(number...)	Returns the lowest value of several numbers.
+
+Example:
+min(5, 7, 9, 0, -3, -7)
+Result: -7
+percentage(number)	Converts number to a percentage (multiplies the number with 100).
+
+Example:
+percentage(1.2)
+Result: 120
+random()	Returns a random number between 0 and 1.
+
+Example:
+random()
+Result: 0.45673
+random(number)	Returns a random integer between 1 and number.
+
+Example:
+random(6)
+Result: 4
+round(number)	Rounds number to the nearest integer.
+
+Example:
+round(15.20)
+Result: 15
+round(15.80)
+Result: 16 */
+
+
+body {
+    background: silver;
+    text-align: center;
+    display: flex;
+    place-content: center;
+
+    .box {
+        width: 600px;
+        height: 450px;
+        background-color: aqua;
+        margin-top: 100px;
+
+        .box1 {
+            width: 400px;
+            height: 250px;
+            background-color: chocolate;
+
+            .box2 {
+                width: 200px;
+                height: 150px;
+                background-color: darkolivegreen;
+            }
+        }
+    }
+}
