@@ -1,0 +1,79 @@
+// Sass @else-if Directive
+// The Sass @else-if directive is used when @if directive is failed. If it is failed @else directive is used.
+
+$type: monster;  
+p {  
+    @if $type == ocean {  
+        color: blue;  
+    } @else if $type == matador {  
+        color: red;  
+    } @else if $type == monster {  
+        color: green;  
+    } @else {  
+        color: black;  
+    }  
+}  
+
+body {
+    background: silver;
+}
+
+// Sass @else-if Directive Example
+// Let's take an example to demonstrate the usage of Sass @else-if directive. We have an HTML file named "simple.html", having the following data.
+
+
+/* Sass @for Directive
+The Sass @for directive facilitates you to generate a style in a loop. It is used when you require repeatedly set of styles. It uses counter variable to set the output for each iteration.
+
+There are two types of keywords used for @for directive:
+
+Through
+To
+Through Keyword
+In Sass @for directive, the through keyword is used to specify the range including both the values of and .
+
+Syntax:
+
+
+@for $var from <start> through <end>  
+Parameter explanation:
+
+$var: It specifies the name of the variable like $i.
+
+and : and are SassScript expressions which will return integers. If the is greater than then it decreases the value of counter variable and when is lesser than then it increases the value of counter variable.
+
+Sass @for Directive Example with through keyword
+Let's take an example to demonstrate the usage of Sass @for directive with through keyword. We have an HTML file named "simple.html", having the following data. */
+
+@for $i from 1 through 4 {  
+    .p#{$i} { padding-left : $i * 10px; }  
+} 
+
+// Sass @each Directive Example
+// Let's take an example to demonstrate the usage of Sass @each directive. We have an HTML file named "simple.html", having the following data.
+
+@each $color in pink, violet, yellow, blue {  
+    .p_#{$color} {  
+        background-color: #{$color};  
+    }  
+}
+
+// Sass @each Directive with multiple assignments
+// Example
+// Let's take an example to demonstrate the usage of Sass @each directive with multiple assignments. We have an HTML file named "simple.html", having the following data.
+
+@each $color, $border in (aqua, dotted),  
+                        (red, solid),  
+                        (green, double){  
+  .#{$color} {  
+    background-color : $color;  
+    border: $border;  
+  }  
+} 
+
+// Sass @for Directive Example with to keyword
+// Let's take an example to demonstrate the usage of Sass @for directive with to keyword. We have an HTML file named "simple.html", having the following data.
+
+@for $i from 1 to 4 {  
+    .p#{$i} { padding-left : $i * 10px; }  
+} 
