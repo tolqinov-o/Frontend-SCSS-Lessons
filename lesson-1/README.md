@@ -3,7 +3,7 @@ My_Frontend || Syntactically Awesome Style Sheets || 1 - Lesson
 
 ## Screenshots
 
-![Lesson - 1](./img/img.jpg)
+![Lesson - 1](./img/img1.jpg)
 
 ## Tech Stack
 
