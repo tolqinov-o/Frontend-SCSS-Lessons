@@ -1,0 +1,63 @@
+// Examples in Each Chapter
+// Our "Show Sass" tool makes it easy to learn Sass, it shows both the code and the result.
+
+/* Define standard variables and values for website */
+/* Define standard variables and values for website */
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 18px;
+
+/* Use the variables */
+body {
+    background-color: $bgcolor;
+    color: $textcolor;
+    font-size: $fontsize;
+}
+
+
+// Why Use Sass?
+// Stylesheets are getting larger, more complex, and harder to maintain. This is where a CSS pre-processor can help.
+
+// Sass lets you use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff.
+
+/* 
+A Simple Example why Sass is Useful
+Let's say we have a website with three main colors:
+
+#a2b9bc
+
+#b2ad7f
+
+#878f99
+
+So, how many times do you need to type those HEX values? A LOT of times. And what about variations of the same colors?
+
+Instead of typing the above values a lot of times, you can use Sass and write this:
+*/
+
+/* define variables for the primary colors */
+$primary_1: #a2b9bc;
+$primary_2: #b2ad7f;
+$primary_3: #878f99;
+
+/* use the variables */
+.main-header {
+    width: 300px;
+    height: 150px;
+    background-color: $primary_1;
+}
+
+.menu-left {
+    width: 300px;
+    height: 150px;
+    background-color: $primary_2;
+}
+
+.menu-right {
+    width: 300px;
+    height: 150px;
+    background-color: $primary_3;
+}
+
+// Sass Comments
+// Sass supports standard CSS comments /* comment */, and in addition it supports inline comments // comment:

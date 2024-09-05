@@ -1,0 +1,42 @@
+/* Define standard variables and values for website */
+/* Define standard variables and values for website */
+/* Use the variables */
+body {
+  background-color: lightblue;
+  color: darkblue;
+  font-size: 18px;
+}
+
+/* 
+A Simple Example why Sass is Useful
+Let's say we have a website with three main colors:
+
+#a2b9bc
+
+#b2ad7f
+
+#878f99
+
+So, how many times do you need to type those HEX values? A LOT of times. And what about variations of the same colors?
+
+Instead of typing the above values a lot of times, you can use Sass and write this:
+*/
+/* define variables for the primary colors */
+/* use the variables */
+.main-header {
+  width: 300px;
+  height: 150px;
+  background-color: #a2b9bc;
+}
+
+.menu-left {
+  width: 300px;
+  height: 150px;
+  background-color: #b2ad7f;
+}
+
+.menu-right {
+  width: 300px;
+  height: 150px;
+  background-color: #878f99;
+}/*# sourceMappingURL=style.css.map */
